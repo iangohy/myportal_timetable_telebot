@@ -86,6 +86,11 @@ def get_screenshot(username, password, api_key, chat_id, next_week = 0):
         driver.close()
         raise Exception("Refresh calendar timeout")
 
+
+    # Create screenshots folder if it does not exist 
+    if not os.path.exists('screenshots'):
+        os.makedirs('screenshots')
+
     filename = f"screenshots/{date.today().isoformat()}.png"
     table = driver.find_element_by_id("SSR_DUMMY_REC$scroll$0")
     table.screenshot(filename)

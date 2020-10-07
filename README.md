@@ -1,5 +1,7 @@
 # SUTD MyPortal Timetable Telebot
 
+**~Project is still under testing**
+
 Saves screenshot of timetable from MyPortal and sends it to user via Telegram bot for easy reference. Bot can get timetable for this week and next week.
 
 Don't worry about your credentials being stolen as the code will only execute locally on your machine.
@@ -13,8 +15,9 @@ Instructions below assume pip and python are already installed. If not you may r
 2. Download latest version of [geckodriver](https://github.com/mozilla/geckodriver/releases)
 3. Unzip downloaded folder and place geckodriver.exe into the root of this project folder (i.e. `.../myportal_timetable_telebot/geckodriver.exe`)
 4. Install python requirements
+    * Open a terminal window and run
 ```
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 5. Create .env file in the root of this project folder (i.e. `.../myportal_timetable_telebot/.env`)
 ```
@@ -46,7 +49,7 @@ next_week = 1
     * Update chat_id (replace <some_number>) in the `.env` file with this number
 9. Done! You should be able to run the script using
 ```
-python main.py
+python3 main.py
 ```
 
 ## Customising Configuration
