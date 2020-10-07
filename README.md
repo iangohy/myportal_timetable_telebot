@@ -10,6 +10,8 @@ Don't worry about your credentials being stolen as the code will only execute lo
 ![resulting_telebot](./example_screenshots/result.png)
 
 ## Installation Instructions
+### Windows/Linux
+
 Instructions below assume pip and python are already installed. If not you may refer [here](https://www.python.org/downloads/) or consult Google.
 1. Download and install [Firefox browser](https://www.mozilla.org/en-US/firefox/new/)
 2. Download latest version of [geckodriver](https://github.com/mozilla/geckodriver/releases)
@@ -26,6 +28,7 @@ myportal_pw = "<very_secure_password>"
 api_key = "<crazy_long_telegram_api_key>"
 chat_id = "<some_number>"
 next_week = 1
+gecko_path = "./geckodriver.exe"
 ```
 6. Create Telegram bot
     * Search for BotFather (https://t.me/botfather) and talk to him
@@ -38,6 +41,7 @@ next_week = 1
     * Replace `<this_is_my_student_id>` with your student id
     * Replace `<very_secure_password>` with your password
     * Replace api_key with the very long token you got from botfather
+    * If you are using **Linux**, change `gecko_path = "./geckodriver.exe"` to `gecko_path = "./geckodriver"`
 8. Get chat_id
     * Search for your bot on telegram and send it a message (can be anything)
     * Open any browser and go to `https://api.telegram.org/bot<crazy_long_telegram_api_key>/getUpdates`, replacing <crazy_long_telegarm_api_key> with the token you got from BotFather

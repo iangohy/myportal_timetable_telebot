@@ -31,7 +31,10 @@ def get_screenshot(username, password, api_key, chat_id, next_week = 0):
     print("Starting webdriver...")
     firefox_options = Options()
     firefox_options.add_argument("-headless")
-    driver = webdriver.Firefox(options = firefox_options, executable_path=r'.\geckodriver.exe')
+    gecko_path = os.getenv("gecko_path")
+    if gecko_path is None:
+        gecko_path = r'./geckodriver.exe'
+    driver = webdriver.Firefox(options = firefox_options, executable_path=gecko_path)
 
     # Login
     driver.get("https://myportal.sutd.edu.sg/psp/EPPRD/EMPLOYEE/EMPL/")
