@@ -1,7 +1,5 @@
 # SUTD MyPortal Timetable Telebot
 
-**~Project is still under testing**
-
 Saves screenshot of timetable from MyPortal and sends it to user via Telegram bot for easy reference. Bot can get timetable for this week and next week.
 
 Don't worry about your credentials being stolen as the code will only execute locally on your machine.

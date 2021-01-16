@@ -4,3 +4,4 @@ screenshots
 .vscode
 geckodriver.log
 geckodriver.exe
+venv
